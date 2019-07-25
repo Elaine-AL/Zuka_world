@@ -1,0 +1,52 @@
+---
+title: "Welcome to Week..."
+author: "Catherine Gitau"
+date: "July 23, 2019"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+# Missing Data
+
+## After this class you should be able to:
+- Why it important to deal with Missing data
+- Ways of dealing with data when it brings missing values after changing representation of the dataset.
+- More reasons as to why data can have missing values
+- Know the Methods used to treat these missing values
+
+## Why is it important to deal with Missing data? {.build}
+
+
+## Ways of dealing with data when it brings up missing values | The data can be missing in one of two possible ways:{.build}
+
+- **Explicityly**
+This is the presence of an absence "NA"
+
+- **Implicitly**
+This is the absence of a presence
+
+# Fun Part! 
+
+
+## Various reasons why you might end up with Missing Data
+- **Data Extraction**
+- **Data Collection**
+  - Missing completely at random
+  - Missing at random
+  - MMissing that depends on unobserved predictors
+  - Missing that depends on the missing value itself
+  
+  
+(research more on this)
+
+## Methods that are used to treat missing values
+
+1) Deletion
+2) Mean/Mode/Median Imputation
+3) Prediction Model
+
+
+

@@ -1,0 +1,60 @@
+---
+title: "Exploration"
+author: "Catherine Gitau"
+date: "July 24, 2019"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+#load in the necessary libraries
+library(tidyverse)
+
+#load in the data
+kiva_locations <- read_csv("/home/catherine/Desktop/Zuka/Zuka_world/data/Kenya/kiva_ke_locations.csv")
+kiva_loans <- read_csv("/home/catherine/Desktop/Zuka/Zuka_world/data/Kenya/kiva_loans_ke.csv")
+kiva_themes <- read_csv("/home/catherine/Desktop/Zuka/Zuka_world/data/Kenya/loan_theme_ke.csv")
+
+```
+
+```{r}
+#table1
+head(kiva_locations)
+```
+
+```{r}
+head(kiva_loans)
+```
+
+```{r}
+new_kiva_loans <- kiva_loans[,c(3,5,15,18,20)]
+write.csv(new_kiva_loans, "/home/catherine/Desktop/Zuka/Zuka_world/data/Kenya/new_kiva.csv")
+```
+
+```{r}
+no_na_kiva <- new_kiva_loans[complete.cases(new_kiva_loans),]
+
+write.csv(no_na_kiva, "/home/catherine/Desktop/Zuka/Zuka_world/data/Kenya/complete.csv")
+```
+
+```{r}
+#Table 2
+head(no_na_kiva)
+```
+
+```{r}
+#Table 3
+#gather Gender
+```
+
+```{r}
+#Table 4
+#spread_dates #female
+
+#spread_dates #male
+```
+
+```{r}
+#compute
+
+```
+
